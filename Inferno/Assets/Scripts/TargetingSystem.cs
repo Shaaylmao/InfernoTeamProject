@@ -23,6 +23,14 @@ public class TargetingSystem : MonoBehaviour
     {
         mainCamera = Camera.main;
         UpdateTargetUI(null);
+
+        if (healthSlider != null)
+        {
+            healthSlider.interactable = false;
+            var nav = healthSlider.navigation;
+            nav.mode = Navigation.Mode.None;
+            healthSlider.navigation = nav;
+        }
     }
 
     void Update()
@@ -46,6 +54,7 @@ public class TargetingSystem : MonoBehaviour
         if (currentTarget != null)
         {
             UpdateTargetUI(currentTarget);
+
             if (Vector3.Distance(transform.position, currentTarget.transform.position) > maxTargetDistance)
             {
                 ClearTarget();
@@ -57,7 +66,7 @@ public class TargetingSystem : MonoBehaviour
     {
         var allTargets = FindObjectsOfType<Targetable>();
         availableTargets = allTargets
-            .Where(t => Vector3.Distance(transform.position, t.transform.position) <= maxTargetDistance)
+            .Where(t => t != null && t.IsEnemy && Vector3.Distance(transform.position, t.transform.position) <= maxTargetDistance)
             .OrderBy(t => Vector3.Distance(transform.position, t.transform.position))
             .ToList();
     }
@@ -80,7 +89,7 @@ public class TargetingSystem : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, maxTargetDistance, targetableLayer))
         {
             Targetable clicked = hit.collider.GetComponentInParent<Targetable>();
-            if (clicked != null)
+            if (clicked != null && clicked.IsEnemy)
             {
                 ClearTarget();
                 currentTarget = clicked;
@@ -103,7 +112,7 @@ public class TargetingSystem : MonoBehaviour
 
     void UpdateTargetUI(Targetable target)
     {
-        if (target == null)
+        if (target == null || !target.IsEnemy)
         {
             targetUIPanel.SetActive(false);
             return;

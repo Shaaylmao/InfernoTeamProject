@@ -8,6 +8,9 @@ public class Targetable : MonoBehaviour
 
     public bool IsTargeted { get; private set; }
 
+    [Header("Target Type")]
+    public bool IsEnemy = true; // Set this in Inspector for enemies (true) or player (false)
+
     [SerializeField] private Renderer targetRenderer;
     [SerializeField] private Color normalColor = Color.white;
     [SerializeField] private Color highlightColor = Color.red;
@@ -31,4 +34,10 @@ public class Targetable : MonoBehaviour
     {
         return Mathf.Clamp01(CurrentHealth / MaxHealth);
     }
+
+    public void TakeDamage(float amount)
+    {
+        CurrentHealth = Mathf.Clamp(CurrentHealth - amount, 0, MaxHealth);
+    }
+
 }
