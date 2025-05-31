@@ -365,6 +365,9 @@
 "Assets/NotNeededScripts/CustomAction.cs"
 "Assets/NotNeededScripts/Interactable.cs"
 "Assets/NotNeededScripts/PlayerController.cs"
+"Assets/Scripts/InputHandler.cs"
+"Assets/Scripts/NewCameraFollow.cs"
+"Assets/Scripts/TopDownCharacterMover.cs"
 -langversion:9.0
 /deterministic
 /optimize+
