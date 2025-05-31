@@ -28,33 +28,25 @@ public class TopDownCharacterMover : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-        var targetVector = new Vector3(_input.InputVector.x, 0, _input.InputVector.y);
-        var movementVector = MoveTowardTarget(targetVector);
+    void Update() 
+    {     
+        var targetVector = new Vector3(_input.InputVector.x, 0, _input.InputVector.y); 
+        var movementVector = MoveTowardTarget(targetVector); 
 
-        if (!RotateTowardMouse)
-        {
-            RotateTowardMovementVector(movementVector);
-        }
-        if (RotateTowardMouse)
-        {
-            RotateFromMouseVector();
-        }
+        // Set Animator bool "run" based on whether there is input
+        bool isMoving = targetVector.magnitude > 0;
+        m_Animator.SetBool("run", isMoving);
 
-        if (transform.position != targetVector)
-        {
-            m_IsMoving = true;
-            m_Animator.SetBool("run", true);
-        }
-        else
-        {
-            m_IsMoving = false;
-            m_Animator.SetBool("run", false);
-        }
-
+        if (!RotateTowardMouse) 
+        { 
+            RotateTowardMovementVector(movementVector); 
+        } 
+        if (RotateTowardMouse) 
+        { 
+            RotateFromMouseVector(); 
+        } 
     }
+
 
     private void RotateFromMouseVector()
     {
