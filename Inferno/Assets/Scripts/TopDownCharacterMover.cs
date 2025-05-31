@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(InputHandler))]
 public class TopDownCharacterMover : MonoBehaviour
 {
+    Animator m_Animator;
+    bool m_IsMoving = false;
     private InputHandler _input;
 
     [SerializeField]
@@ -22,6 +24,7 @@ public class TopDownCharacterMover : MonoBehaviour
     private void Awake()
     {
         _input = GetComponent<InputHandler>();
+        m_Animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -38,6 +41,17 @@ public class TopDownCharacterMover : MonoBehaviour
         if (RotateTowardMouse)
         {
             RotateFromMouseVector();
+        }
+
+        if (transform.position != targetVector)
+        {
+            m_IsMoving = true;
+            m_Animator.SetBool("run", true);
+        }
+        else
+        {
+            m_IsMoving = false;
+            m_Animator.SetBool("run", false);
         }
 
     }

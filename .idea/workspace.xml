@@ -15,6 +15,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Inferno/Assets/CustomAction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Inferno/Assets/Scripts/InputHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Inferno/Assets/Scripts/TopDownCharacterMover.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -46,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748684701914</updated>
       <workItem from="1748684703112" duration="1581000" />
-      <workItem from="1748689137661" duration="635000" />
+      <workItem from="1748689137661" duration="2002000" />
     </task>
     <servers />
   </component>
