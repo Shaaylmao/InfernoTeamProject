@@ -362,6 +362,8 @@
 "Assets/CustomAction.cs"
 "Assets/Scripts/InputHandler.cs"
 "Assets/Scripts/NewCameraFollow.cs"
+"Assets/Scripts/Targetable.cs"
+"Assets/Scripts/TargetingSystem.cs"
 "Assets/Scripts/TopDownCharacterMover.cs"
 -langversion:9.0
 /deterministic
