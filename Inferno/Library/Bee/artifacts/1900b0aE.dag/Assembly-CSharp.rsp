@@ -361,6 +361,7 @@
 -analyzer:"D:/Unity/2022.3.60f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/CustomAction.cs"
 "Assets/Scripts/EnemyAI.cs"
+"Assets/Scripts/GameOverManager.cs"
 "Assets/Scripts/InputHandler.cs"
 "Assets/Scripts/NewCameraFollow.cs"
 "Assets/Scripts/PlayerAttacl.cs"

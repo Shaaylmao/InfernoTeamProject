@@ -9,16 +9,24 @@ public class Targetable : MonoBehaviour
     public bool IsTargeted { get; private set; }
 
     [Header("Target Type")]
-    public bool IsEnemy = true; // Set this in Inspector for enemies (true) or player (false)
+    public bool IsEnemy = true; // Set in Inspector for player (false) or enemy (true)
+
+    [Header("Death Handling")]
+    [SerializeField] private float destroyDelay = 2f; // Delay before destroy
 
     [SerializeField] private Renderer targetRenderer;
     [SerializeField] private Color normalColor = Color.white;
     [SerializeField] private Color highlightColor = Color.red;
 
+    private bool isDead = false;
+    private GameOverManager gameOverManager;
+
     private void Awake()
     {
         if (targetRenderer == null)
             targetRenderer = GetComponentInChildren<Renderer>();
+
+        gameOverManager = FindObjectOfType<GameOverManager>();
     }
 
     public void SetTargeted(bool value)
@@ -37,7 +45,36 @@ public class Targetable : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        if (isDead) return;
+
         CurrentHealth = Mathf.Clamp(CurrentHealth - amount, 0, MaxHealth);
+
+        if (CurrentHealth <= 0)
+        {
+            isDead = true;
+
+            DisableMovement();
+
+            if (!IsEnemy && gameOverManager != null)
+            {
+                gameOverManager.TriggerGameOver();
+            }
+
+            Destroy(gameObject, destroyDelay);
+        }
     }
+
+    private void DisableMovement()
+    {
+        MonoBehaviour[] components = GetComponentsInChildren<MonoBehaviour>(true);
+        foreach (var comp in components)
+        {
+            if (comp != this && comp.enabled)
+            {
+                comp.enabled = false;
+            }
+        }
+    }
+
 
 }
