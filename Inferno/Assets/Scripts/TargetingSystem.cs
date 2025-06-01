@@ -31,6 +31,15 @@ public class TargetingSystem : MonoBehaviour
             nav.mode = Navigation.Mode.None;
             healthSlider.navigation = nav;
         }
+
+        //  Subscribe to death event
+        Targetable.OnTargetableDeath += HandleTargetDeath;
+    }
+
+    // Unsubscribe when destroyed
+    void OnDestroy()
+    {
+        Targetable.OnTargetableDeath -= HandleTargetDeath;
     }
 
     void Update()
@@ -123,4 +132,13 @@ public class TargetingSystem : MonoBehaviour
     }
 
     public Targetable GetCurrentTarget() => currentTarget;
+
+    //  Clear if current target dies
+    private void HandleTargetDeath(Targetable deadTarget)
+    {
+        if (deadTarget == currentTarget)
+        {
+            ClearTarget();
+        }
+    }
 }

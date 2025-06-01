@@ -1,7 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 public class Targetable : MonoBehaviour
 {
+    public delegate void OnDeathDelegate(Targetable target);
+    public static event OnDeathDelegate OnTargetableDeath;
+
     public string DisplayName = "Enemy";
     public float MaxHealth = 100f;
     public float CurrentHealth = 100f;
@@ -9,24 +14,21 @@ public class Targetable : MonoBehaviour
     public bool IsTargeted { get; private set; }
 
     [Header("Target Type")]
-    public bool IsEnemy = true; // Set in Inspector for player (false) or enemy (true)
+    public bool IsEnemy = true; // Set this in Inspector for enemies (true) or player (false)
 
-    [Header("Death Handling")]
-    [SerializeField] private float destroyDelay = 2f; // Delay before destroy
+    [Header("Death Settings")]
+    [SerializeField] private float deathDelay = 2f;
 
     [SerializeField] private Renderer targetRenderer;
     [SerializeField] private Color normalColor = Color.white;
     [SerializeField] private Color highlightColor = Color.red;
 
     private bool isDead = false;
-    private GameOverManager gameOverManager;
 
     private void Awake()
     {
         if (targetRenderer == null)
             targetRenderer = GetComponentInChildren<Renderer>();
-
-        gameOverManager = FindObjectOfType<GameOverManager>();
     }
 
     public void SetTargeted(bool value)
@@ -49,30 +51,58 @@ public class Targetable : MonoBehaviour
 
         CurrentHealth = Mathf.Clamp(CurrentHealth - amount, 0, MaxHealth);
 
-        if (CurrentHealth <= 0)
+        if (CurrentHealth <= 0f)
         {
             isDead = true;
 
-            DisableMovement();
+            //  Notify listeners
+            OnTargetableDeath?.Invoke(this);
 
-            if (!IsEnemy && gameOverManager != null)
-            {
-                gameOverManager.TriggerGameOver();
-            }
-
-            Destroy(gameObject, destroyDelay);
+            StartCoroutine(HandleDeath());
         }
+    }
+
+    private IEnumerator HandleDeath()
+    {
+        Debug.Log($"{DisplayName} died.");
+
+        DisableMovement();
+
+        yield return new WaitForSeconds(deathDelay);
+
+        if (!IsEnemy)
+        {
+            GameOverManager gameOver = FindObjectOfType<GameOverManager>();
+            if (gameOver != null)
+            {
+                gameOver.TriggerGameOver();
+            }
+        }
+
+        Destroy(gameObject);
     }
 
     private void DisableMovement()
     {
-        MonoBehaviour[] components = GetComponentsInChildren<MonoBehaviour>(true);
+        MonoBehaviour[] components = GetComponents<MonoBehaviour>();
         foreach (var comp in components)
         {
-            if (comp != this && comp.enabled)
-            {
+            if (comp != this)
                 comp.enabled = false;
-            }
+        }
+
+        var rb = GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+            rb.isKinematic = true;
+        }
+
+        var agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        if (agent != null)
+        {
+            agent.isStopped = true;
+            agent.enabled = false;
         }
     }
 

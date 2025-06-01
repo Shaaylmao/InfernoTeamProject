@@ -77,8 +77,7 @@ public class EnemyAI : MonoBehaviour
         Targetable playerTarget = player.GetComponent<Targetable>();
         if (playerTarget != null)
         {
-            playerTarget.CurrentHealth -= attackDamage;
-            playerTarget.CurrentHealth = Mathf.Max(0, playerTarget.CurrentHealth);
+            playerTarget.TakeDamage(attackDamage);
         }
 
         cooldownTimer = attackCooldown;
