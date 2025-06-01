@@ -63,8 +63,7 @@ public class PlayerAttacl : MonoBehaviour
             animator.SetTrigger("Attack");
         }
 
-        target.CurrentHealth -= attackDamage;
-        target.CurrentHealth = Mathf.Max(0, target.CurrentHealth);
+        target.TakeDamage(attackDamage);
 
         Debug.Log($"Attacked {target.name} for {attackDamage} damage");
     }
