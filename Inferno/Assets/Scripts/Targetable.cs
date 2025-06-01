@@ -11,6 +11,9 @@ public class Targetable : MonoBehaviour
     public float MaxHealth = 100f;
     public float CurrentHealth = 100f;
 
+    private Animator animator;
+    [SerializeField] private string deathTriggerName = "Die";
+
     public bool IsTargeted { get; private set; }
 
     [Header("Target Type")]
@@ -32,6 +35,8 @@ public class Targetable : MonoBehaviour
     {
         if (targetRenderer == null)
             targetRenderer = GetComponentInChildren<Renderer>();
+
+        animator = GetComponent<Animator>(); 
     }
 
     public void SetTargeted(bool value)
@@ -91,6 +96,13 @@ public class Targetable : MonoBehaviour
 
         DisableMovement();
 
+        // Trigger death animation
+        if (animator != null && !string.IsNullOrEmpty(deathTriggerName))
+        {
+            animator.SetTrigger(deathTriggerName);
+        }
+
+        // Wait for animation to play before destruction
         yield return new WaitForSeconds(deathDelay);
 
         if (!IsEnemy)
