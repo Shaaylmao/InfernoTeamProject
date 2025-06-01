@@ -22468,8 +22468,13 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 1645481,
       "PayloadLength": 32388,
+=======
+      "PayloadOffset": 1596460,
+      "PayloadLength": 28036,
+>>>>>>> fe0e18c7858da411d5612976262b42a588f00dc6
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -22481,7 +22486,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 1677956,
+=======
+      "PayloadOffset": 1624583,
+>>>>>>> fe0e18c7858da411d5612976262b42a588f00dc6
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -22734,6 +22743,7 @@
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
         "Assets/Scripts/EnemyAI.cs",
+        "Assets/Scripts/GameOverManager.cs",
         "Assets/Scripts/InputHandler.cs",
         "Assets/Scripts/NewCameraFollow.cs",
         "Assets/Scripts/PlayerAttacl.cs",
@@ -23020,8 +23030,13 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 1678052,
       "PayloadLength": 10048,
+=======
+      "PayloadOffset": 1624679,
+      "PayloadLength": 9893,
+>>>>>>> fe0e18c7858da411d5612976262b42a588f00dc6
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
       "Outputs": [
