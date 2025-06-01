@@ -14,16 +14,19 @@ public class Targetable : MonoBehaviour
     public bool IsTargeted { get; private set; }
 
     [Header("Target Type")]
-    public bool IsEnemy = true; // Set this in Inspector for enemies (true) or player (false)
+    public bool IsEnemy = true;
 
     [Header("Death Settings")]
     [SerializeField] private float deathDelay = 2f;
 
+    [Header("Highlight Settings")]
     [SerializeField] private Renderer targetRenderer;
     [SerializeField] private Color normalColor = Color.white;
     [SerializeField] private Color highlightColor = Color.red;
 
     private bool isDead = false;
+    private bool isHighlighting = false;
+    private float pulseSpeed = 2f;
 
     private void Awake()
     {
@@ -34,9 +37,32 @@ public class Targetable : MonoBehaviour
     public void SetTargeted(bool value)
     {
         IsTargeted = value;
-        if (targetRenderer != null)
+        isHighlighting = value;
+
+        if (!isHighlighting)
         {
-            targetRenderer.material.color = value ? highlightColor : normalColor;
+            SetBaseColor(normalColor);
+        }
+    }
+
+    private void Update()
+    {
+        if (isHighlighting && targetRenderer != null)
+        {
+            float t = Mathf.PingPong(Time.time * pulseSpeed, 1f);
+            Color pulsingColor = Color.Lerp(normalColor, highlightColor, t);
+            SetBaseColor(pulsingColor);
+        }
+    }
+
+    private void SetBaseColor(Color color)
+    {
+        foreach (var mat in targetRenderer.materials)
+        {
+            if (mat.HasProperty("_Color"))
+            {
+                mat.color = color;
+            }
         }
     }
 
@@ -54,10 +80,7 @@ public class Targetable : MonoBehaviour
         if (CurrentHealth <= 0f)
         {
             isDead = true;
-
-            //  Notify listeners
             OnTargetableDeath?.Invoke(this);
-
             StartCoroutine(HandleDeath());
         }
     }
@@ -105,6 +128,4 @@ public class Targetable : MonoBehaviour
             agent.enabled = false;
         }
     }
-
-
 }
