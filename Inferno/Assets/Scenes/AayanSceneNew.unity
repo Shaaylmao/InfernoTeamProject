@@ -2136,9 +2136,13 @@ PrefabInstance:
       propertyPath: targetUIPanel
       value: 
       objectReference: {fileID: 1432087873}
+    - target: {fileID: 5258751057016896688, guid: 44541ae804eb54a4a88c8662180f91a2, type: 3}
+      propertyPath: buffedAttackDamage
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7417091845516407641, guid: 44541ae804eb54a4a88c8662180f91a2, type: 3}
       propertyPath: deathDelay
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7417091845516407641, guid: 44541ae804eb54a4a88c8662180f91a2, type: 3}
       propertyPath: targetRenderer
@@ -2168,7 +2172,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 11272007817246254, guid: c64df5dc7266e2c429d395988b8c7ead, type: 3}
       propertyPath: deathDelay
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5931746319824229596, guid: c64df5dc7266e2c429d395988b8c7ead, type: 3}
       propertyPath: m_LocalPosition.x

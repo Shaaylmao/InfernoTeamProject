@@ -4,6 +4,9 @@ using System.Collections;
 
 public class Targetable : MonoBehaviour
 {
+    public delegate void OnDeathDelegate(Targetable target);
+    public static event OnDeathDelegate OnTargetableDeath;
+
     public string DisplayName = "Enemy";
     public float MaxHealth = 100f;
     public float CurrentHealth = 100f;
@@ -14,7 +17,7 @@ public class Targetable : MonoBehaviour
     public bool IsEnemy = true; // Set this in Inspector for enemies (true) or player (false)
 
     [Header("Death Settings")]
-    [SerializeField] private float deathDelay = 2f; // Time before GameOver/destroy
+    [SerializeField] private float deathDelay = 2f;
 
     [SerializeField] private Renderer targetRenderer;
     [SerializeField] private Color normalColor = Color.white;
@@ -51,6 +54,10 @@ public class Targetable : MonoBehaviour
         if (CurrentHealth <= 0f)
         {
             isDead = true;
+
+            //  Notify listeners
+            OnTargetableDeath?.Invoke(this);
+
             StartCoroutine(HandleDeath());
         }
     }
