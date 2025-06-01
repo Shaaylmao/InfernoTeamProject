@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerAttacl : MonoBehaviour
 {
@@ -31,15 +33,24 @@ public class PlayerAttacl : MonoBehaviour
     public float magicDamage = 75f;
     public float magicRange = 10f;
     public GameObject magicImpactEffect; // particle effect prefab
-    public string magicAnimationTrigger = "CastSpell"; // optional animation trigger
+    public string magicAnimationTrigger = "CastSpell";
 
     private float magicCooldownTimer = 0f;
+
+    [Header("Cooldown UI")]
+    public Image buffCooldownImage;
+    public TMP_Text buffCooldownText;
+    public Image magicCooldownImage;
+    public TMP_Text magicCooldownText;
 
     void Start()
     {
         targetingSystem = GetComponent<TargetingSystem>();
         if (animator == null)
             animator = GetComponent<Animator>();
+
+        HideCooldownUI(buffCooldownImage, buffCooldownText);
+        HideCooldownUI(magicCooldownImage, magicCooldownText);
     }
 
     void Update()
@@ -49,8 +60,11 @@ public class PlayerAttacl : MonoBehaviour
         magicCooldownTimer -= Time.deltaTime;
 
         if (Input.GetMouseButtonDown(0)) TryAttack();
-        if (Input.GetKeyDown(KeyCode.Alpha1)) TryBuffAbility();
-        if (Input.GetKeyDown(KeyCode.Alpha2)) TryMagicAbility();
+        if (Input.GetKeyDown(KeyCode.Alpha1)) ActivateBuff();
+        if (Input.GetKeyDown(KeyCode.Alpha2)) CastRangedAttack();
+
+        UpdateCooldownUI(buffCooldownTimer, buffCooldown, buffCooldownImage, buffCooldownText);
+        UpdateCooldownUI(magicCooldownTimer, magicCooldown, magicCooldownImage, magicCooldownText);
     }
 
     void TryAttack()
@@ -78,7 +92,7 @@ public class PlayerAttacl : MonoBehaviour
         Debug.Log($"Attacked {target.name} for {finalDamage} damage");
     }
 
-    void TryBuffAbility()
+    public void ActivateBuff()
     {
         if (buffCooldownTimer > 0f) return;
 
@@ -100,7 +114,7 @@ public class PlayerAttacl : MonoBehaviour
         isBuffed = false;
     }
 
-    void TryMagicAbility()
+    public void CastRangedAttack()
     {
         if (magicCooldownTimer > 0f) return;
 
@@ -122,6 +136,32 @@ public class PlayerAttacl : MonoBehaviour
         }
 
         magicCooldownTimer = magicCooldown;
+    }
+
+    void UpdateCooldownUI(float timer, float duration, Image fillImage, TMP_Text text)
+    {
+        if (fillImage == null || text == null) return;
+
+        if (timer > 0f)
+        {
+            fillImage.fillAmount = timer / duration;
+            text.text = Mathf.CeilToInt(timer).ToString();
+            fillImage.gameObject.SetActive(true);
+            text.gameObject.SetActive(true);
+        }
+        else
+        {
+            fillImage.fillAmount = 0f;
+            text.text = "";
+            fillImage.gameObject.SetActive(false);
+            text.gameObject.SetActive(false);
+        }
+    }
+
+    void HideCooldownUI(Image image, TMP_Text text)
+    {
+        if (image != null) image.gameObject.SetActive(false);
+        if (text != null) text.gameObject.SetActive(false);
     }
 
     void OnDrawGizmosSelected()

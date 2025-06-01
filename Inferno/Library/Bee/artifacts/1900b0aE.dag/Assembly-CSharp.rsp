@@ -365,6 +365,7 @@
 "Assets/Scripts/NewCameraFollow.cs"
 "Assets/Scripts/PlayerAttacl.cs"
 "Assets/Scripts/PlayerUI.cs"
+"Assets/Scripts/SpellCooldown.cs"
 "Assets/Scripts/Targetable.cs"
 "Assets/Scripts/TargetingSystem.cs"
 "Assets/Scripts/TopDownCharacterMover.cs"
