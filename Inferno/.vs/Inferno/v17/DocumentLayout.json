@@ -7,11 +7,15 @@
       "RelativeMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\targetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|c:\\users\\drili\\inferno\\infernoteamproject\\inferno\\assets\\scripts\\playerattacl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|c:\\users\\drili\\inferno\\infernoteamproject\\inferno\\assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|C:\\Users\\drili\\Inferno\\InfernoTeamProject\\Inferno\\assets\\scripts\\playerattacl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerattacl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|c:\\users\\drili\\inferno\\infernoteamproject\\inferno\\assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|C:\\Users\\drili\\Inferno\\InfernoTeamProject\\Inferno\\assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D19B272B-BC37-6565-6095-6A77DE36A9C3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyAI.cs",
+              "DocumentMoniker": "C:\\Users\\drili\\Inferno\\InfernoTeamProject\\Inferno\\Assets\\Scripts\\EnemyAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyAI.cs",
+              "ToolTip": "C:\\Users\\drili\\Inferno\\InfernoTeamProject\\Inferno\\Assets\\Scripts\\EnemyAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyAI.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswEkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T17:24:39.582Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,14 +49,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Targetable.cs",
               "ToolTip": "C:\\Users\\drili\\Inferno\\InfernoTeamProject\\Inferno\\Assets\\Scripts\\Targetable.cs",
               "RelativeToolTip": "Assets\\Scripts\\Targetable.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAwEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T14:11:17.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GameOverManager.cs",
               "DocumentMoniker": "C:\\Users\\drili\\Inferno\\InfernoTeamProject\\Inferno\\Assets\\Scripts\\GameOverManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameOverManager.cs",
@@ -47,12 +64,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameOverManager.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:10:54.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T14:10:54.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerAttacl.cs",
               "DocumentMoniker": "C:\\Users\\drili\\Inferno\\InfernoTeamProject\\Inferno\\Assets\\Scripts\\PlayerAttacl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAttacl.cs",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerAttacl.cs",
               "ViewState": "AgIAAIUAAAAAAAAAAAAgwFYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:05:35.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T14:05:35.931Z"
             }
           ]
         }
