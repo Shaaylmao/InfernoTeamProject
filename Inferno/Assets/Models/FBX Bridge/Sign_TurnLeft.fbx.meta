@@ -3,7 +3,22 @@ guid: 9cd2d60822c4d194fa98f178db421312
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sign_TurnLeft color
+    second: {fileID: 2800000, guid: 07988c66769dbf8468158522ed9bf578, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sign_TurnLeft normal
+    second: {fileID: 2800000, guid: 8c03321cc9058ba4ca30c2d0198fd41b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sign_TurnLeft roughness
+    second: {fileID: 2800000, guid: a0b650bcb31aa66428c23806057ecc0d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

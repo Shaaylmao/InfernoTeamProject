@@ -3,7 +3,22 @@ guid: 3099dea3ca475904a8c487d7b48d4e07
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_DarkStone color
+    second: {fileID: 2800000, guid: 6f067ef26d3601e41b03192daf568cc6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_DarkStone normal
+    second: {fileID: 2800000, guid: 41a8e8df34771dd4f8cb9500fcba3726, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_DarkStone roughness
+    second: {fileID: 2800000, guid: 037cb2dbe1dbd7446b40888fdd0d7256, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

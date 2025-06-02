@@ -3,7 +3,37 @@ guid: 6913036c06a7a1743a851f6cfa87e302
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_tile_Broken_DeadEnd_Road color
+    second: {fileID: 2800000, guid: d4b8b5f720a380e43bf2a25fa998bb64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_tile_Broken_DeadEnd_Road normal
+    second: {fileID: 2800000, guid: 35150e0a74fb76845ac521158541c341, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_tile_Broken_DeadEnd_Road roughness
+    second: {fileID: 2800000, guid: f182ef245a8458f42b3aa42b864129ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_tile_Broken_DeadEnd_Road_Base color
+    second: {fileID: 2800000, guid: 141fd5818c68e7e468c0b1ba4ebd9a7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_tile_Broken_DeadEnd_Road_Base normal
+    second: {fileID: 2800000, guid: c3d38838ab810d744a2b9c610b1bb72b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_tile_Broken_DeadEnd_Road_Base roughness
+    second: {fileID: 2800000, guid: dd2315b46d569c64982d8d9c89935f8a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

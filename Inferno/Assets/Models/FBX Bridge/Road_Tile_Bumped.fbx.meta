@@ -3,7 +3,22 @@ guid: ac378213a47dfe7499adecfa350ce101
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Bumped color
+    second: {fileID: 2800000, guid: 373b79a6f77a85646a6f2fdc9ee53883, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Bumped normal
+    second: {fileID: 2800000, guid: 9480c38415e104a4aa20f23d59c8c3a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Bumped roughness
+    second: {fileID: 2800000, guid: a06fbfc43e1ca1a47b984d4ca033c3c1, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,22 @@ guid: 80bee55e450b14143841a35c251b8bf4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Rounded color
+    second: {fileID: 2800000, guid: fdc7f89324fe96b40b023620ce2b5f55, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Rounded normal
+    second: {fileID: 2800000, guid: ca94248904b142f4891baef5a02f623b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Rounded roughness
+    second: {fileID: 2800000, guid: 664376b042080604aa9efac2fe308545, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

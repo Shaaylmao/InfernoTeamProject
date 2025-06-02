@@ -3,7 +3,22 @@ guid: 826e4322401c038469b8192ba0442594
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lamp_Road color
+    second: {fileID: 2800000, guid: adfaf41f161a72d448d7f9c28880e4bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lamp_Road normal
+    second: {fileID: 2800000, guid: 8c69f85759a4c3c469997198251fe3c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lamp_Road roughness
+    second: {fileID: 2800000, guid: d9b0a07dcb73081498f90c7fbf9c38a2, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

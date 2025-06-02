@@ -3,7 +3,22 @@ guid: a6ebe2debb2f5004a9e532cb46705aa5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Broken_Right color
+    second: {fileID: 2800000, guid: c16bb2a09b544bc4cadcc1ffffa4f0a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Broken_Right normal
+    second: {fileID: 2800000, guid: 5d37365e513b109488a5345ce783cacf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Broken_Right roughness
+    second: {fileID: 2800000, guid: da97be7fa2cfa9c43bad34b094cf8b60, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

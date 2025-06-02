@@ -3,7 +3,22 @@ guid: cc0fe38cd7e2d0d45ab24e66a9678e63
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Wood color
+    second: {fileID: 2800000, guid: 19c24a13584b0a541943ae6aa9b674d5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Wood normal
+    second: {fileID: 2800000, guid: f1e574f5ea440f44bbe231ca94d4047f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Wood roughness
+    second: {fileID: 2800000, guid: 05eabc9579e48b94b9659fa601ab1815, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

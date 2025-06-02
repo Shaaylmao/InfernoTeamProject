@@ -3,7 +3,22 @@ guid: acdc130b63c9f4948986fd61c7640123
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_BlackBox_Broken color
+    second: {fileID: 2800000, guid: 9a6cba76cf2b6014596720d8367ce8bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_BlackBox_Broken normal
+    second: {fileID: 2800000, guid: 893179174246be44bb1e4bcd9909e447, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_BlackBox_Broken roughness
+    second: {fileID: 2800000, guid: 78a7283bbe5f52a4c860c13949a68071, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,22 @@ guid: c82ab4e4dd390ca43bc3a098591c809f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Clear color
+    second: {fileID: 2800000, guid: 9457719c97532d840bf8e869be43d49a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Clear normal
+    second: {fileID: 2800000, guid: 13e5d65d593ac1749a0ad163932ed9b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile_Clear roughness
+    second: {fileID: 2800000, guid: 342e2429e913c9245baadbdd79536d60, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

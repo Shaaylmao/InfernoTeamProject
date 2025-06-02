@@ -3,7 +3,22 @@ guid: 242f304aed8690540a44f4da887385b1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence_Wood_End color
+    second: {fileID: 2800000, guid: 411cde5d813e3a74f8d9508302995e03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence_Wood_End normal
+    second: {fileID: 2800000, guid: d23361541954c4c42b90ab9306f2c84e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence_Wood_End roughness
+    second: {fileID: 2800000, guid: 84bc6f6c13458654da2a04786f678d7f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

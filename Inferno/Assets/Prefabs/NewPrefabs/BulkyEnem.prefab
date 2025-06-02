@@ -210,7 +210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 449cdc4317b87524db5d40e27f86948f, type: 3}
       propertyPath: m_Name
-      value: BulkyEnem 1
+      value: BulkyEnem
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 449cdc4317b87524db5d40e27f86948f, type: 3}
       propertyPath: m_Layer
@@ -296,6 +296,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 449cdc4317b87524db5d40e27f86948f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4aa09a16a55f01548a9f6e63be5d982d, type: 2}
     - target: {fileID: 6359367838880983219, guid: 449cdc4317b87524db5d40e27f86948f, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -355,6 +359,11 @@ PrefabInstance:
 --- !u!137 &907520877611232010 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -4468000557298650176, guid: 449cdc4317b87524db5d40e27f86948f, type: 3}
+  m_PrefabInstance: {fileID: 5577233443507656906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2021207956870358363 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 449cdc4317b87524db5d40e27f86948f, type: 3}
   m_PrefabInstance: {fileID: 5577233443507656906}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &4730813248134112667 stripped
@@ -427,6 +436,7 @@ MonoBehaviour:
   DisplayName: Enemy
   MaxHealth: 100
   CurrentHealth: 100
+  deathTriggerName: Die
   IsEnemy: 1
   deathDelay: 3
   targetRenderer: {fileID: 907520877611232010}
@@ -473,4 +483,4 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
-  animator: {fileID: 0}
+  animator: {fileID: 2021207956870358363}

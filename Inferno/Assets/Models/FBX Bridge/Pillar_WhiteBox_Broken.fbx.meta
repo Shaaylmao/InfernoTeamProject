@@ -3,7 +3,22 @@ guid: 67c015a42391b3241827c0099b43166c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_WhiteBox_Broken color
+    second: {fileID: 2800000, guid: 595a94e6b8c38cb45a53f3db63268a4c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_WhiteBox_Broken normal
+    second: {fileID: 2800000, guid: a4e7a173c7732ea478b1b51041c528df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_WhiteBox_Broken roughness
+    second: {fileID: 2800000, guid: cc49dbf6ac6a6f54fa9de55e72937dab, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

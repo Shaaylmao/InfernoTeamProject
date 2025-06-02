@@ -3,7 +3,22 @@ guid: fe8cd63c25517b2448978ee530f0817a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Stone_Turn color
+    second: {fileID: 2800000, guid: fd31cf4871cd5a449b1b132e283c0416, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Stone_Turn normal
+    second: {fileID: 2800000, guid: 8e24a063e146f3644ba851a5b873c2b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Stone_Turn roughness
+    second: {fileID: 2800000, guid: 009f3e11f4ece59439eeafbc3011f70b, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,22 @@ guid: dcb87a029bf8cc942832b13522742518
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Square color
+    second: {fileID: 2800000, guid: 15121c0d4acdb7049af7bbc33076568c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Square normal
+    second: {fileID: 2800000, guid: 3ce2a7d3a8ecb1e4eb093654f1203f16, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Square roughness
+    second: {fileID: 2800000, guid: c69e7450b5b70384ea1695aef03f0e56, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

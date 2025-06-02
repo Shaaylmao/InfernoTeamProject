@@ -3,7 +3,22 @@ guid: dd68a8e68fbdcb34ca52caf9983dbcd3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "S\u0131gn_Straight color"
+    second: {fileID: 2800000, guid: 758c4fc5cffadda4d874ef73e6f15cdf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "S\u0131gn_Straight normal"
+    second: {fileID: 2800000, guid: c351ede4457f7f344a47539913668051, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "S\u0131gn_Straight roughness"
+    second: {fileID: 2800000, guid: ee97e8712fe95e248bb95530b8cd1b4c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,22 @@ guid: c7eff157c82cd0246a4d5e12c47ba26f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Square_Broken color
+    second: {fileID: 2800000, guid: 752016a3c0685944eb38be884380d3b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Square_Broken normal
+    second: {fileID: 2800000, guid: 2f0eb944c5889764a858960a7ace5d3c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Rock_Square_Broken roughness
+    second: {fileID: 2800000, guid: 35597f487125ca74cb4176ea050ea014, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

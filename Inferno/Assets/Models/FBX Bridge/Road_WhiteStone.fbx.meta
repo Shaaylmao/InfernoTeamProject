@@ -3,7 +3,22 @@ guid: d5caec1da6b43e94cac1cf6e6a06597a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Stone color
+    second: {fileID: 2800000, guid: cb67d1057bc0c30479dc35d4d4be8e96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: japanese_stone_wall_diff_1k
+    second: {fileID: 2800000, guid: e56c5e1e86e7f704db7f97f82803e691, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: japanese_stone_wall_rough_1k
+    second: {fileID: 2800000, guid: fde19cd474c9d9440bfec268ca1c7381, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
