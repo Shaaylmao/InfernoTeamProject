@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/AayanSceneNew.unity
+- path: Assets/Scenes/Level experiments 1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
