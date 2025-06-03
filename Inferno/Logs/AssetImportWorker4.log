@@ -15,7 +15,7 @@ C:/Users/drili/Inferno/InfernoTeamProject/Inferno
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-50112
+65408
 Successfully changed project path to: C:/Users/drili/Inferno/InfernoTeamProject/Inferno
 C:/Users/drili/Inferno/InfernoTeamProject/Inferno
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,15 +49,15 @@ C:/Users/drili/Inferno/InfernoTeamProject/Inferno
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2060]  Target information:
+Player connection [28064]  Target information:
 
-Player connection [2060]  * "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 2671141500 [EditorId] 2671141500 [Version] 1048832 [Id] WindowsEditor(7,TARDIS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [28064]  * "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 2353186303 [EditorId] 2353186303 [Version] 1048832 [Id] WindowsEditor(7,TARDIS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [2060] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [2060] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [28064] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28064] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 7.83 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 8.62 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.60f1 (5f63fdee6d95)
 [Subsystems] Discovering subsystems at path C:/Program Files (x86)/Unity/2022.3.60f1/Editor/Data/Resources/UnitySubsystems
@@ -73,49 +73,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files (x86)/Unity/2022.3.60f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files (x86)/Unity/2022.3.60f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files (x86)/Unity/2022.3.60f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files (x86)/Unity/2022.3.60f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files (x86)/Unity/2022.3.60f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files (x86)/Unity/2022.3.60f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.009997 seconds.
-- Loaded All Assemblies, in  0.361 seconds
+Registered in 0.008046 seconds.
+- Loaded All Assemblies, in  0.320 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 304 ms
+Android Extension - Scanning For ADB Devices 292 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.643 seconds
-Domain Reload Profiling: 1003ms
-	BeginReloadAssembly (105ms)
+- Finished resetting the current domain, in  0.591 seconds
+Domain Reload Profiling: 910ms
+	BeginReloadAssembly (93ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
+	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (156ms)
-		LoadAssemblies (105ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (132ms)
+		LoadAssemblies (92ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (152ms)
-			TypeCache.Refresh (151ms)
-				TypeCache.ScanAssembly (135ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (129ms)
+				TypeCache.ScanAssembly (117ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (643ms)
+	FinalizeReload (591ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (596ms)
+		SetupLoadedEditorAssemblies (550ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (404ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (388ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (119ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (110ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,52 +124,52 @@ Domain Reload Profiling: 1003ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.566 seconds
+- Loaded All Assemblies, in  0.682 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.479 seconds
-Domain Reload Profiling: 1042ms
-	BeginReloadAssembly (147ms)
+- Finished resetting the current domain, in  0.495 seconds
+Domain Reload Profiling: 1174ms
+	BeginReloadAssembly (193ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (341ms)
-		LoadAssemblies (283ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (375ms)
+		LoadAssemblies (326ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (140ms)
-			TypeCache.Refresh (119ms)
-				TypeCache.ScanAssembly (106ms)
+		AnalyzeDomain (157ms)
+			TypeCache.Refresh (138ms)
+				TypeCache.ScanAssembly (124ms)
 			ScanForSourceGeneratedMonoScriptInfo (14ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (480ms)
+	FinalizeReload (495ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (335ms)
+		SetupLoadedEditorAssemblies (352ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (58ms)
-			ProcessInitializeOnLoadAttributes (228ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (234ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 3.46 ms, found 1 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 2.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3257 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (52.7 KB). Loaded Objects now: 3740.
-Memory consumption went from 127.0 MB to 127.0 MB.
-Total: 3.753700 ms (FindLiveObjects: 0.256700 ms CreateObjectMapping: 0.259900 ms MarkObjects: 3.123100 ms  DeleteObjects: 0.113100 ms)
+Unloading 3364 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (52.8 KB). Loaded Objects now: 3844.
+Memory consumption went from 128.3 MB to 128.3 MB.
+Total: 3.382100 ms (FindLiveObjects: 0.290400 ms CreateObjectMapping: 0.097900 ms MarkObjects: 2.884400 ms  DeleteObjects: 0.107600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,733 +187,90 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 104187.722252 seconds.
-  path: Assets/Models/FBX Bridge/Fence_Wood.fbx
-  artifactKey: Guid(7f5d80ed801698e4d94ec3ea6b12223f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Fence_Wood.fbx using Guid(7f5d80ed801698e4d94ec3ea6b12223f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 110539.357768 seconds.
+  path: Assets/_Bad_Raccoon/_3D Realistic Terrain Free/Prefabs/Particle_Cloud_Atmos_A.prefab
+  artifactKey: Guid(66f7129f685bccb4082b66a0cc4c3c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Bad_Raccoon/_3D Realistic Terrain Free/Prefabs/Particle_Cloud_Atmos_A.prefab using Guid(66f7129f685bccb4082b66a0cc4c3c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '033814a4a2d402a79eb71d6c36999098') in 0.147947 seconds
+ -> (artifact id: 'e820d81f2f3a5bb22ba200456a81a36b') in 0.135555 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 10
 ========================================================================
 Received Import Request.
-  Time since last request: 4.692889 seconds.
-  path: Assets/Models/FBX Bridge/Fence_Wood.fbx
-  artifactKey: Guid(7f5d80ed801698e4d94ec3ea6b12223f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Fence_Wood.fbx using Guid(7f5d80ed801698e4d94ec3ea6b12223f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 38.115031 seconds.
+  path: Assets/Prefabs/ClickEffect.prefab
+  artifactKey: Guid(050afa046fc44bc4793833f845457352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ClickEffect.prefab using Guid(050afa046fc44bc4793833f845457352) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '962e8cc23116e827efa753e0aa8281fc') in 0.026804 seconds
+ -> (artifact id: '01ded196e0876a0128bdc2d221090a8b') in 0.057022 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 7.468488 seconds.
-  path: Assets/Models/FBX Bridge/Fence_Wood_End.fbx
-  artifactKey: Guid(242f304aed8690540a44f4da887385b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Fence_Wood_End.fbx using Guid(242f304aed8690540a44f4da887385b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(723336fe640ca494db0a18d758fc8706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(723336fe640ca494db0a18d758fc8706) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'b58d789b840616e680edeb57336b1c27') in 0.045234 seconds
+ -> (artifact id: '4a257f90dda4a79de888e27c7729da32') in 0.139405 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 2.530717 seconds.
-  path: Assets/Models/FBX Bridge/Fence_Wood_End.fbx
-  artifactKey: Guid(242f304aed8690540a44f4da887385b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Fence_Wood_End.fbx using Guid(242f304aed8690540a44f4da887385b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '19a09f0931dd045b4c60031991d7c72d') in 0.036813 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 8.561168 seconds.
-  path: Assets/Models/FBX Bridge/Lamp_Road.fbx
-  artifactKey: Guid(826e4322401c038469b8192ba0442594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Lamp_Road.fbx using Guid(826e4322401c038469b8192ba0442594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'bb6c369fd438d903cc972670511e2d9d') in 0.051028 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 2.231972 seconds.
-  path: Assets/Models/FBX Bridge/Lamp_Road.fbx
-  artifactKey: Guid(826e4322401c038469b8192ba0442594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Lamp_Road.fbx using Guid(826e4322401c038469b8192ba0442594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7da9799ca471519292e1a4bf200bf7d4') in 0.053702 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-========================================================================
-Received Import Request.
-  Time since last request: 12.291692 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackBox.fbx
-  artifactKey: Guid(6012901d9d04a9145a19b37e41301bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackBox.fbx using Guid(6012901d9d04a9145a19b37e41301bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '2d3d7b9e4d849ecd540ddf2db1331940') in 0.043709 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 2.015423 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackBox.fbx
-  artifactKey: Guid(6012901d9d04a9145a19b37e41301bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackBox.fbx using Guid(6012901d9d04a9145a19b37e41301bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9feebbbdcc132025d34421b6b2e6cbcc') in 0.049432 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 0000000000003644 may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-Thread 000000000000661C may have been prematurely finalized
-========================================================================
-Received Import Request.
-  Time since last request: 175.799825 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackBox_Broken.fbx
-  artifactKey: Guid(acdc130b63c9f4948986fd61c7640123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackBox_Broken.fbx using Guid(acdc130b63c9f4948986fd61c7640123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0519c7835133e4d0b270f9e8b2378ecc') in 0.024562 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.008289 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackBox_Broken color.png
-  artifactKey: Guid(9a6cba76cf2b6014596720d8367ce8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackBox_Broken color.png using Guid(9a6cba76cf2b6014596720d8367ce8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'f0b6a5a399f430c91199ca1bb269d11d') in 0.034720 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackBox_Broken roughness.png
-  artifactKey: Guid(78a7283bbe5f52a4c860c13949a68071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackBox_Broken roughness.png using Guid(78a7283bbe5f52a4c860c13949a68071) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '20cab59aeaf84f2d576868c739ec5e1a') in 0.018865 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.738079 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackBox_Broken.fbx
-  artifactKey: Guid(acdc130b63c9f4948986fd61c7640123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackBox_Broken.fbx using Guid(acdc130b63c9f4948986fd61c7640123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '055975b3e7d687e18540f67035c55ef3') in 0.043651 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 11.597213 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackRock_Square.fbx
-  artifactKey: Guid(651f8bbd84dfcd54abb82654cfa4eeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackRock_Square.fbx using Guid(651f8bbd84dfcd54abb82654cfa4eeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '759c751cb337cbbea4eeda2b55af76bd') in 0.075387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 8.246005 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackRock_Square_Broken.fbx
-  artifactKey: Guid(187a65b219108294ba58e383b045ffe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackRock_Square_Broken.fbx using Guid(187a65b219108294ba58e383b045ffe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0ab7e2627d35b62f384c70b39661810a') in 0.082610 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 4.088550 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_BlackRock_Square.fbx
-  artifactKey: Guid(651f8bbd84dfcd54abb82654cfa4eeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_BlackRock_Square.fbx using Guid(651f8bbd84dfcd54abb82654cfa4eeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ac2292a66fae9934477d01f0f8baa74c') in 0.072438 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 7.363792 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_Rock_Rounded.fbx
-  artifactKey: Guid(80bee55e450b14143841a35c251b8bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_Rock_Rounded.fbx using Guid(80bee55e450b14143841a35c251b8bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a3ef500738643bf1e6c786c2b2a90e9d') in 0.021797 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 5.572610 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_Rock_Rounded_Broken.fbx
-  artifactKey: Guid(35e6093644327ea4e89523f65fc72521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_Rock_Rounded_Broken.fbx using Guid(35e6093644327ea4e89523f65fc72521) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd191e7a5bd4d3a3de949c2acecb334b7') in 0.023313 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 6.949537 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_Rock_Square.fbx
-  artifactKey: Guid(dcb87a029bf8cc942832b13522742518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_Rock_Square.fbx using Guid(dcb87a029bf8cc942832b13522742518) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'b20c038446bea8be4bdf420719dd4593') in 0.104240 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 12.389033 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_Rock_Square_Broken.fbx
-  artifactKey: Guid(c7eff157c82cd0246a4d5e12c47ba26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_Rock_Square_Broken.fbx using Guid(c7eff157c82cd0246a4d5e12c47ba26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8b813126d0126cc180419d2a6fdc101d') in 0.066709 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 9.245915 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_WhiteBox.fbx
-  artifactKey: Guid(d03577cdef027f34e8c75cc50f4489f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_WhiteBox.fbx using Guid(d03577cdef027f34e8c75cc50f4489f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'bbabe2413bb770f6adc8b061739e6705') in 0.037720 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 8.143739 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_WhiteBox_Broken.fbx
-  artifactKey: Guid(67c015a42391b3241827c0099b43166c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_WhiteBox_Broken.fbx using Guid(67c015a42391b3241827c0099b43166c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '854606263bb2e93129414499545d3b2e') in 0.037255 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 6.359941 seconds.
-  path: Assets/Models/FBX Bridge/Road_DarkStoneReal.fbx
-  artifactKey: Guid(4341276c8bb7eba49b7ff81f57ddc904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_DarkStoneReal.fbx using Guid(4341276c8bb7eba49b7ff81f57ddc904) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '6315065ea8f7a871ac89e1773931a35f') in 0.045542 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 9.989575 seconds.
-  path: Assets/Models/FBX Bridge/Road_Rock_Turn.fbx
-  artifactKey: Guid(64ceb8fb5de62854d927a25aa73b39b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Rock_Turn.fbx using Guid(64ceb8fb5de62854d927a25aa73b39b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '96660983af25ebe61682b93c874d163e') in 0.041606 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 7.082526 seconds.
-  path: Assets/Models/FBX Bridge/Road_Stone.fbx
-  artifactKey: Guid(3099dea3ca475904a8c487d7b48d4e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Stone.fbx using Guid(3099dea3ca475904a8c487d7b48d4e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9bce5b7906930bb5418b7a58fa3b0e86') in 0.040473 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 10.281372 seconds.
-  path: Assets/Models/FBX Bridge/Road_Stone_Turn.fbx
-  artifactKey: Guid(fe8cd63c25517b2448978ee530f0817a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Stone_Turn.fbx using Guid(fe8cd63c25517b2448978ee530f0817a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '2a594647d102cd298c3ac8773ddc5b90') in 0.040731 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 14.884153 seconds.
-  path: Assets/Models/FBX Bridge/Road_tile_Broken_DeadEnd_Road.fbx
-  artifactKey: Guid(6913036c06a7a1743a851f6cfa87e302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_tile_Broken_DeadEnd_Road.fbx using Guid(6913036c06a7a1743a851f6cfa87e302) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9fadb625a02f37d7b01c42c02ff142b5') in 0.178869 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 106
-========================================================================
-Received Import Request.
-  Time since last request: 7.125589 seconds.
-  path: Assets/Models/FBX Bridge/Road_tile_Broken_front_Road.fbx
-  artifactKey: Guid(fd7feed47929df548a9ad8931ea997e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_tile_Broken_front_Road.fbx using Guid(fd7feed47929df548a9ad8931ea997e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'f659ae6e483bb18e577c4f64f3411ec3') in 0.067572 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 7.292080 seconds.
-  path: Assets/Models/FBX Bridge/Road_Tile_Broken_Right.fbx
-  artifactKey: Guid(a6ebe2debb2f5004a9e532cb46705aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Tile_Broken_Right.fbx using Guid(a6ebe2debb2f5004a9e532cb46705aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a37107ba23d6ea187d2a491fecf6d9d2') in 0.066598 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
-========================================================================
-Received Import Request.
-  Time since last request: 9.828309 seconds.
-  path: Assets/Models/FBX Bridge/Road_Tile_Bumped.fbx
-  artifactKey: Guid(ac378213a47dfe7499adecfa350ce101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Tile_Bumped.fbx using Guid(ac378213a47dfe7499adecfa350ce101) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c2660d493cba079c4417caaa33a36314') in 0.051308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 55
-========================================================================
-Received Import Request.
-  Time since last request: 12.103830 seconds.
-  path: Assets/Models/FBX Bridge/Road_Tile_Clear.fbx
-  artifactKey: Guid(c82ab4e4dd390ca43bc3a098591c809f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Tile_Clear.fbx using Guid(c82ab4e4dd390ca43bc3a098591c809f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd6c5b575a6402ffef38ebe0ce050e761') in 0.054694 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
-========================================================================
-Received Import Request.
-  Time since last request: 7.270478 seconds.
-  path: Assets/Models/FBX Bridge/Road_Way_Turn.fbx
-  artifactKey: Guid(72cef5f12eeb590438e6a873e8c3053e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Way_Turn.fbx using Guid(72cef5f12eeb590438e6a873e8c3053e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'e1ad3f0ad83ce5cdc43d73fc18889f4e') in 0.050603 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 13.962625 seconds.
-  path: Assets/Models/FBX Bridge/Road_WhiteStone.fbx
-  artifactKey: Guid(d5caec1da6b43e94cac1cf6e6a06597a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_WhiteStone.fbx using Guid(d5caec1da6b43e94cac1cf6e6a06597a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c1f167097c892cbd64cb6b226eabd743') in 0.047702 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 7.466847 seconds.
-  path: Assets/Models/FBX Bridge/Road_Wood.fbx
-  artifactKey: Guid(cc0fe38cd7e2d0d45ab24e66a9678e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Wood.fbx using Guid(cc0fe38cd7e2d0d45ab24e66a9678e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'af7b539badacdf434e380efeb1674a34') in 0.081971 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 9.675213 seconds.
-  path: Assets/Models/FBX Bridge/Sign_Straight.fbx
-  artifactKey: Guid(dd68a8e68fbdcb34ca52caf9983dbcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Sign_Straight.fbx using Guid(dd68a8e68fbdcb34ca52caf9983dbcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c40fe4dd64b765d9db1d48ea380cf01e') in 0.076929 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 10.447053 seconds.
-  path: Assets/Models/FBX Bridge/Sign_TurnLeft.fbx
-  artifactKey: Guid(9cd2d60822c4d194fa98f178db421312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Sign_TurnLeft.fbx using Guid(9cd2d60822c4d194fa98f178db421312) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '2353496853d255b5cc32dd267569032f') in 0.041625 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 6.513527 seconds.
-  path: Assets/Models/FBX Bridge/Sign_TurnRight.fbx
-  artifactKey: Guid(b70e0d27c7cd9554d9e44ab758f0422b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Sign_TurnRight.fbx using Guid(b70e0d27c7cd9554d9e44ab758f0422b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'f1cf946ad9b71ffe0eb43724b8bad451') in 0.070432 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 6.296876 seconds.
-  path: Assets/Models/FBX Bridge/Straight.fbx
-  artifactKey: Guid(b1d6b53f39ce6384ea8cb604844fe7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Straight.fbx using Guid(b1d6b53f39ce6384ea8cb604844fe7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '97c39c21a87433210cdcc4865aae5f40') in 0.045287 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 6.567385 seconds.
-  path: Assets/Models/FBX Bridge/TurnLeft.fbx
-  artifactKey: Guid(5286efe4ea143c540a237f4f78c73817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/TurnLeft.fbx using Guid(5286efe4ea143c540a237f4f78c73817) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ed3de9f6782d6ad130bc9ea33032b470') in 0.024135 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 6.662513 seconds.
-  path: Assets/Models/FBX Bridge/TurnRight.fbx
-  artifactKey: Guid(bba98432d6e7b1e4b91fd7ad0a665fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/TurnRight.fbx using Guid(bba98432d6e7b1e4b91fd7ad0a665fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '988aa3726480903723a59d2fa92b0b54') in 0.020354 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 2.096546 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_Rock_Rounded.fbx
-  artifactKey: Guid(80bee55e450b14143841a35c251b8bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_Rock_Rounded.fbx using Guid(80bee55e450b14143841a35c251b8bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4a510997caae1dfc1d0d4145fb094627') in 0.033268 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Models/FBX Bridge/Road_tile_Broken_DeadEnd_Road.fbx
-  artifactKey: Guid(6913036c06a7a1743a851f6cfa87e302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_tile_Broken_DeadEnd_Road.fbx using Guid(6913036c06a7a1743a851f6cfa87e302) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '3819f561868ce7b25fe6f676184ff320') in 0.233494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 106
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Models/FBX Bridge/Sign_Straight.fbx
-  artifactKey: Guid(dd68a8e68fbdcb34ca52caf9983dbcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Sign_Straight.fbx using Guid(dd68a8e68fbdcb34ca52caf9983dbcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '3ce4e37c2cc9e47737a90fd95ce50245') in 0.053109 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
+Number of asset objects unloaded after import = 159
 ========================================================================
 Received Import Request.
   Time since last request: 0.000034 seconds.
-  path: Assets/Models/FBX Bridge/Road_Way_Turn.fbx
-  artifactKey: Guid(72cef5f12eeb590438e6a873e8c3053e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Way_Turn.fbx using Guid(72cef5f12eeb590438e6a873e8c3053e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1c0db142f25d89c98b62838c1f47ca89') in 0.026575 seconds
+  path: Assets/Prefabs/Terrain_A Variant.prefab
+  artifactKey: Guid(4f68e44e6d9a0de4d954e352d434831a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain_A Variant.prefab using Guid(4f68e44e6d9a0de4d954e352d434831a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c698247190d81d2edd11fe42b17a1050') in 0.004124 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
+Number of asset objects unloaded after import = 13
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Models/FBX Bridge/Road_Tile_Clear.fbx
-  artifactKey: Guid(c82ab4e4dd390ca43bc3a098591c809f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Tile_Clear.fbx using Guid(c82ab4e4dd390ca43bc3a098591c809f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '85de922557498f1080237a63ce1bb4c6') in 0.041904 seconds
+  Time since last request: 41.157302 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(45937fc5748d55344abab34ca7f19ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(45937fc5748d55344abab34ca7f19ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '587a7104dd1fd62ed0a1da83d35d83ba') in 0.000602 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_WhiteBox_Broken.fbx
-  artifactKey: Guid(67c015a42391b3241827c0099b43166c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_WhiteBox_Broken.fbx using Guid(67c015a42391b3241827c0099b43166c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '01a8579dfe630a1aa39e7d3f0218ef63') in 0.020572 seconds
+  Time since last request: 2.217284 seconds.
+  path: Assets/Models
+  artifactKey: Guid(54a447ff64569eb4497a2b39663c2398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(54a447ff64569eb4497a2b39663c2398) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '56bf57d43dcfda4d9d0bf6f26557ffa9') in 0.000629 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Models/FBX Bridge/Road_Tile_Broken_Right.fbx
-  artifactKey: Guid(a6ebe2debb2f5004a9e532cb46705aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_Tile_Broken_Right.fbx using Guid(a6ebe2debb2f5004a9e532cb46705aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd295ab1eab6b56c27d21303e8d6f1b1c') in 0.044261 seconds
+  Time since last request: 1.454507 seconds.
+  path: Assets/Models/FBX Bridge
+  artifactKey: Guid(8459260714cb4054b8b480b25d0a5875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FBX Bridge using Guid(8459260714cb4054b8b480b25d0a5875) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e05ac7c883c7d7005ced48d4a08f9844') in 0.000541 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Models/FBX Bridge/Pillar_Rock_Square_Broken.fbx
-  artifactKey: Guid(c7eff157c82cd0246a4d5e12c47ba26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Pillar_Rock_Square_Broken.fbx using Guid(c7eff157c82cd0246a4d5e12c47ba26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c990930659249c986d0353161fbe23af') in 0.068959 seconds
+  Time since last request: 232.161614 seconds.
+  path: Assets/Animations/Breathing Idle.fbx
+  artifactKey: Guid(efbb372875005dd4c9fef21fcd82cf05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Breathing Idle.fbx using Guid(efbb372875005dd4c9fef21fcd82cf05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f86790441539d9796576b34fd3fc2f2b') in 0.006270 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
+Number of asset objects unloaded after import = 125
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Models/FBX Bridge/Road_DarkStoneReal.fbx
-  artifactKey: Guid(4341276c8bb7eba49b7ff81f57ddc904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FBX Bridge/Road_DarkStoneReal.fbx using Guid(4341276c8bb7eba49b7ff81f57ddc904) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 1.087560 seconds.
+  path: Assets/Animations/MixAPlayer/Ch12_nonPBR@Combo Punch.fbx
+  artifactKey: Guid(69e234caac806024eade58c5ce7f7894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/MixAPlayer/Ch12_nonPBR@Combo Punch.fbx using Guid(69e234caac806024eade58c5ce7f7894) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '96df300589fe02827f07fe2a9a0272a4') in 0.043103 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'fd1777175aac49253dbf4e873675f003') in 0.171769 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Number of asset objects unloaded after import = 145
