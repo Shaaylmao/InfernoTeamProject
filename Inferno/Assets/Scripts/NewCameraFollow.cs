@@ -24,16 +24,19 @@ public class NewCameraFollow : MonoBehaviour
 
     private float currentZoomDistance;
     private float targetZoomDistance;
-    private float yaw = 0f;
-    private float pitch = 45f;
-    private bool isRotating = false;
+
+    private float yaw;
+    private float pitch;
+    private float tempYaw;
+    private float tempPitch;
+
+    private bool isMiddleRotating = false;
 
     void Start()
     {
         currentZoomDistance = defaultOffset.magnitude;
         targetZoomDistance = currentZoomDistance;
 
-        // Initialize yaw and pitch from default offset
         Vector3 angles = Quaternion.LookRotation(-defaultOffset).eulerAngles;
         yaw = angles.y;
         pitch = angles.x;
@@ -46,24 +49,22 @@ public class NewCameraFollow : MonoBehaviour
         HandleCameraInput();
         HandleZoom();
 
-        // Compute desired offset from yaw, pitch, and zoom distance
-        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
+        float finalYaw = isMiddleRotating ? tempYaw : yaw;
+        float finalPitch = isMiddleRotating ? tempPitch : pitch;
+
+        Quaternion rotation = Quaternion.Euler(finalPitch, finalYaw, 0);
         Vector3 desiredOffset = rotation * new Vector3(0, 0, -currentZoomDistance);
-
-        // Smooth follow
         Vector3 desiredPosition = player.position + desiredOffset;
-        transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
 
-        // Always look at the player
+        transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         transform.LookAt(player);
     }
 
     void HandleCameraInput()
     {
-        if (Input.GetMouseButton(1)) // RMB held
+        // Right Mouse Button: permanent rotation
+        if (Input.GetMouseButton(1))
         {
-            isRotating = true;
-
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
 
@@ -71,22 +72,36 @@ public class NewCameraFollow : MonoBehaviour
             pitch -= mouseY * pitchSpeed;
             pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
         }
-        else if (isRotating) // RMB just released
+
+        // Middle Mouse Button Hold: temporary freelook
+        if (Input.GetMouseButtonDown(2))
         {
-            // Smoothly return to default yaw/pitch
-            Quaternion targetRot = Quaternion.LookRotation(-defaultOffset);
-            Vector3 targetAngles = targetRot.eulerAngles;
+            tempYaw = yaw;
+            tempPitch = pitch;
+        }
 
-            yaw = Mathf.LerpAngle(yaw, targetAngles.y, Time.deltaTime * rotationSpeed);
-            pitch = Mathf.Lerp(pitch, targetAngles.x, Time.deltaTime * pitchSpeed);
+        if (Input.GetMouseButton(2))
+        {
+            isMiddleRotating = true;
 
-            // Stop rotating when close enough
-            if (Mathf.Abs(yaw - targetAngles.y) < 0.5f && Mathf.Abs(pitch - targetAngles.x) < 0.5f)
+            float mouseX = Input.GetAxis("Mouse X");
+            float mouseY = Input.GetAxis("Mouse Y");
+
+            tempYaw += mouseX * rotationSpeed;
+            tempPitch -= mouseY * pitchSpeed;
+            tempPitch = Mathf.Clamp(tempPitch, minPitch, maxPitch);
+        }
+        else if (Input.GetMouseButtonUp(2))
+        {
+            // If MMB was a tap (no drag), reset to default angles
+            if (!isMiddleRotating || (Mathf.Approximately(Input.GetAxis("Mouse X"), 0f) && Mathf.Approximately(Input.GetAxis("Mouse Y"), 0f)))
             {
-                yaw = targetAngles.y;
-                pitch = targetAngles.x;
-                isRotating = false;
+                Vector3 resetAngles = Quaternion.LookRotation(-defaultOffset).eulerAngles;
+                yaw = resetAngles.y;
+                pitch = resetAngles.x;
             }
+
+            isMiddleRotating = false;
         }
     }
 
